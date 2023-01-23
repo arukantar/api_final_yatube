@@ -1,5 +1,6 @@
 from django.contrib import admin
 
+<<<<<<< HEAD
 from .models import Comment, Follow, Group, Post
 
 
@@ -14,3 +15,6 @@ admin.site.register(Post, PostAdmin)
 admin.site.register(Group)
 admin.site.register(Comment)
 admin.site.register(Follow)
+=======
+# Register your models here.
+>>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0

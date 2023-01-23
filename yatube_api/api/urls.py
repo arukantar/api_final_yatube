@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 from api.views import PostViewSet, GroupViewSet, CommentViewSet, FollowViewSet
@@ -14,4 +15,9 @@ urlpatterns = [
     path('v1/', include('djoser.urls')),
     path('v1/', include('djoser.urls.jwt')),
     path('v1/', include(v1_router.urls)),
+=======
+from django.urls import path
+
+urlpatterns = [
+>>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0
 ]

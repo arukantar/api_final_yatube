@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, permissions, filters, mixins
 from rest_framework.pagination import LimitOffsetPagination
@@ -54,3 +55,6 @@ class FollowViewSet(ListCreateViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+=======
+# TODO:  Напишите свой вариант
+>>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0
