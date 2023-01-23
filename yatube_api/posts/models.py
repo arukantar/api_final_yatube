@@ -4,7 +4,6 @@ from django.db import models
 User = get_user_model()
 
 
-<<<<<<< HEAD
 class Group(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
@@ -15,8 +14,6 @@ class Group(models.Model):
         return self.title
 
 
-=======
->>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0
 class Post(models.Model):
     text = models.TextField()
     pub_date = models.DateTimeField('Дата публикации', auto_now_add=True)
@@ -24,7 +21,6 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, related_name='posts')
     image = models.ImageField(
         upload_to='posts/', null=True, blank=True)
-<<<<<<< HEAD
     group = models.ForeignKey(
         Group,
         on_delete=models.SET_NULL,
@@ -33,8 +29,6 @@ class Post(models.Model):
         related_name='posts',
         verbose_name='Группа',
     )
-=======
->>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0
 
     def __str__(self):
         return self.text
@@ -48,7 +42,6 @@ class Comment(models.Model):
     text = models.TextField()
     created = models.DateTimeField(
         'Дата добавления', auto_now_add=True, db_index=True)
-<<<<<<< HEAD
 
 
 class Follow(models.Model):
@@ -67,5 +60,3 @@ class Follow(models.Model):
         constraints = [models.UniqueConstraint(
             fields=['user', 'following'], name='unique_follow'
         )]
-=======
->>>>>>> 000fc00ccec8453459136e5c568055db8a7294f0
