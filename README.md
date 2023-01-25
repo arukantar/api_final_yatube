@@ -99,3 +99,9 @@ python3 manage.py runserver
     "password": "string"
 }
 ```
+
+**Автор:**
+
+GitHub: https://github.com/arukantar
+
+Email: Blissenobiarella@yandex.ru
